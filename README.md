@@ -1,4 +1,4 @@
-## Previsão Total de Crimes - Projeto FastAPI
+# Previsão Total de Crimes - Projeto FastAPI
 
 Este projeto é uma API desenvolvida com FastAPI para prever o número total de crimes em municípios com base em dados educacionais e o IDEB (Índice de Desenvolvimento da Educação Básica). A API utiliza um modelo treinado de Machine Learning para fazer as previsões.
 
@@ -9,7 +9,7 @@ Validação de entrada: Verifica a consistência dos dados fornecidos, incluindo
 Interface RESTful: Fornece uma rota POST para enviar dados e receber previsões.
 
 
-## Requisitos
+# Requisitos
 
 Certifique-se de ter instalado:
 
@@ -24,19 +24,17 @@ Pydantic
 Joblib
 Scikit-learn
 
-## Uso
+# Uso
 
 1. Clonando o Repositório
 git clone https://github.com/plat07/api-previsao-crimes.git
 cd src/app
 
-2. Executando com Docker
-
-docker build -t previsao-total-crimes .
-docker run -d -p 8000:8000 previsao-total-crimes
+2. Executando com Docker:
+  docker build -t previsao-total-crimes .
+  docker run -d -p 8000:8000 previsao-total-crimes
 
 3. Executando Localmente
-
 Instalando as Dependências:
 pip install -r requirements.txt
 
@@ -44,11 +42,12 @@ Iniciando a API:
 uvicorn src.app.main:app
 
 
-## Rota Disponível 
+# Rota Disponível 
 
-# POST  /previsao-total-crimes/
+## POST  /previsao-total-crimes/
 
 Exemplo de Requisição:
+
 {
     "ano": 2024,
     "municipio": "Recife",
