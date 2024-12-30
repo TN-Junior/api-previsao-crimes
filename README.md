@@ -47,6 +47,7 @@ uvicorn src.app.main:app
 ## POST  /previsao-total-crimes/
 
 Exemplo de Requisição:
+``` bash
 
 {
     "ano": 2024,
